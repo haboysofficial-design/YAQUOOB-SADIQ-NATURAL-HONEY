@@ -1,0 +1,410 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffdf7;
+    color: #29200e;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #17130b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #eebd35;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #eebd35;
+}
+
+.nav-btn {
+    background: #eebd35;
+    padding: 11px 22px;
+    border-radius: 30px;
+    color: #211800;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 9%;
+    background:
+    linear-gradient(90deg, rgba(15,10,3,.90), rgba(15,10,3,.35)),
+    url('https://images.unsplash.com/photo-1471943311424-646960669fbc?w=1600')
+    center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.tag,
+.section-heading span,
+.about-content span {
+    color: #eebd35;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.15;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #f4bd35;
+}
+
+.hero p {
+    line-height: 1.9;
+    color: #eee;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.main-btn,
+.whatsapp-btn {
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+.main-btn {
+    background: #eebd35;
+    color: #201700;
+}
+
+.whatsapp-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 35px;
+    color: #f5d98e;
+    font-size: 13px;
+}
+
+.products,
+.gallery,
+.contact {
+    padding: 90px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 350px));
+    justify-content: center;
+    gap: 35px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,.09);
+    transition: .4s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 25px;
+}
+
+.product-info p {
+    color: #777;
+    margin: 12px 0;
+}
+
+.product-info h2 {
+    color: #b17b09;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    display: block;
+    padding: 13px;
+    background: #211a0c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.buy-btn:hover {
+    background: #d9a51e;
+    color: black;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.04);
+}
+
+.about {
+    padding: 100px 10%;
+    background: #21190c;
+    color: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin: 18px 0;
+}
+
+.about p {
+    line-height: 2;
+    color: #ddd;
+}
+
+.about h3 {
+    color: #eebd35;
+    margin-top: 25px;
+}
+
+.delivery {
+    background: #eebd35;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.delivery h2 {
+    font-size: 32px;
+}
+
+.delivery p {
+    margin: 15px 0 25px;
+}
+
+.delivery a {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #21190c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-box > div {
+    background: white;
+    padding: 35px;
+    width: 300px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px #00000012;
+}
+
+.contact-box h3 {
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.contact-box a {
+    display: inline-block;
+    background: #d9a51e;
+    color: black;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+footer {
+    padding: 40px 20px;
+    background: #17130b;
+    color: white;
+    text-align: center;
+    line-height: 2.2;
+}
+
+footer h2 {
+    color: #eebd35;
+}
+
+.floating-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #168b4b;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 40px;
+    z-index: 999;
+    font-weight: 700;
+    box-shadow: 0 5px 20px #0003;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 850px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-btn {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-container img {
+        height: 170px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .products,
+    .gallery,
+    .contact {
+        padding: 65px 6%;
+    }
+}
